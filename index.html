@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Một bí mật dành cho cậu 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#">little love <span>♡</span></a>
+    <button id="musicButton" class="music-button" type="button">
+      ♫ Bật nhạc
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A LITTLE SECRET FOR YOU</p>
+      <h1>Có một điều<br>tớ muốn nói với cậu...</h1>
+      <p class="intro">
+        Tớ đã cất điều này trong lòng một thời gian.
+        Hôm nay, tớ muốn cậu biết. 💗
+      </p>
+
+      <button id="envelopeButton" class="envelope-button"
+              type="button" aria-expanded="false">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-paper">♡</span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart">♥</span>
+        </span>
+        <span id="envelopeLabel">Mở phong thư nhé</span>
+      </button>
+
+      <article id="letter" class="letter" hidden>
+        <p class="letter-small">GỬI NGƯỜI TỚ THƯƠNG</p>
+        <h2>Điều tớ giấu trong lòng 💌</h2>
+        <p>
+          Tớ không biết bắt đầu từ đâu cho thật hay,
+          nên tớ chọn cách chân thành nhất.
+        </p>
+        <p>
+          Từ khi có cậu, những điều bình thường cũng
+          trở nên đáng nhớ hơn. Tớ thích cách cậu cười,
+          cách cậu kể chuyện và cả những khoảnh khắc
+          chẳng cần nói gì nhiều.
+        </p>
+        <p>
+          Tớ không mong cậu phải trả lời ngay.
+          Tớ chỉ muốn cậu biết rằng...
+          <strong>tớ có tình cảm đặc biệt với cậu.</strong> 💗
+        </p>
+        <p class="signature">Từ một người luôn mong cậu vui.</p>
+      </article>
+    </section>
+
+    <section class="section gallery-section" id="memories">
+      <p class="eyebrow">LITTLE MOMENTS</p>
+      <h2>Một góc nhỏ của những điều đẹp đẽ</h2>
+      <p class="section-intro">
+        Mỗi bức ảnh là một câu chuyện.
+      </p>
+
+      <div class="gallery-card">
+        <div class="photo-wrap">
+          <img id="galleryImage"
+               src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=85"
+               alt="Khoảnh khắc lãng mạn">
+          <span id="photoNumber" class="photo-number">01 / 03</span>
+        </div>
+        <p id="photoCaption" class="photo-caption">
+          Có những khoảnh khắc chỉ cần nhớ lại cũng thấy vui.
+        </p>
+        <div class="gallery-controls">
+          <button id="prevPhoto" class="round-button"
+                  type="button" aria-label="Ảnh trước">←</button>
+          <div id="galleryDots" class="gallery-dots"></div>
+          <button id="nextPhoto" class="round-button"
+                  type="button" aria-label="Ảnh tiếp theo">→</button>
+        </div>
+      </div>
+      <p class="hint">M có thể thay các ảnh mẫu bằng ảnh của riêng mình.</p>
+    </section>
+
+    <section class="section countdown-section">
+      <p class="eyebrow">A SPECIAL DAY</p>
+      <h2>Một ngày đáng nhớ</h2>
+      <p id="countdownLabel" class="section-intro">
+        Thời gian kể từ ngày đặc biệt của chúng ta.
+      </p>
+      <div class="counter-card">
+        <span class="counter-heart">♡</span>
+        <strong id="dayCount">...</strong>
+        <span>ngày đã trôi qua</span>
+      </div>
+      <p class="hint">Ngày đặc biệt là do m tự chọn trong file JavaScript.</p>
+    </section>
+
+    <section class="closing">
+      <span class="closing-heart">♥</span>
+      <h2>Không cần một câu chuyện hoàn hảo.</h2>
+      <p>
+        Chỉ cần những cảm xúc thật lòng,
+        và một người khiến mình muốn cố gắng hơn mỗi ngày.
+      </p>
+      <a href="#memories" class="text-link">Xem lại những khoảnh khắc ♡</a>
+    </section>
+  </main>
+
+  <footer>
+    Made with love, just for you ♡
+  </footer>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
